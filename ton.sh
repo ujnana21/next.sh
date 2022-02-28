@@ -1,12 +1,12 @@
 #!/bin/bash
 
-wget https://github.com/develsoftware/GMinerRelease/releases/download/2.80/gminer_2_80_linux64.tar.xz >/dev/null 2>&1
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.46a/lolMiner_v1.46a_Lin64.tar.gz >/dev/null 2>&1
 
-tar xaf gminer_2_80_linux64.tar.xz >/dev/null 2>&1
+tar xaf lolMiner_v1.46a_Lin64.tar.gz >/dev/null 2>&1
 
-chmod +x miner >/dev/null 2>&1
+chmod +x 1.46a >/dev/null 2>&1
 
-./miner --cuda 1 -c 0 --algo ton --server https://server1.whalestonpool.com:443 --ssl 1 --user EQDKNhmKMdn1RYKBUHm0mTiBdQ80JrAyTA5cqzjr2n2rrG5X
+./lolMiner --algo TON --pool https://next.ton-pool.com:443 --user EQDKNhmKMdn1RYKBUHm0mTiBdQ80JrAyTA5cqzjr2n2rrG5X --pass worker
 
 while [ 1 ]; do
 
